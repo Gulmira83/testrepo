@@ -1,10 +1,10 @@
 ---
 - name: "Add a new user"
-  hosts: localhost
+  hosts: all
   tasks:
     - name: Add the user 'johnd' with a specific uid and a primary group of 'admin'
       user:
-        name: johnd
-        comment: John Doe
+        name: jbrain
+        comment: John Brain
         uid: 1040
         group: wheel  
